@@ -1,12 +1,14 @@
-import Link from "next/link"
+
+
 export default function about() {
   return (
     <>
-      <h1>this is about pg</h1>
-
-     <br />
-     <br />
-     <Link href='/'>back to home</Link>
+      <div>
+        <h1>About Us</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora quae vero incidunt praesentium voluptatibus cum est odio vel dolores molestias!
+        </p>
+      </div>
     </>
   )
 }
