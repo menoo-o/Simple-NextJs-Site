@@ -10,3 +10,76 @@ body{
   flex-direction: column;
 }
 
+/* Main container for Home page */
+.home-main {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(380px, 1fr)); /* Auto-fit grid columns */
+  gap: 20px; /* Space between the grid items */
+  padding: 20px;
+  text-align: center; /* Center text inside each card */
+}
+
+/* Styling for individual category cards */
+.category-card {
+  background-color: #f9f9f9; /* Light background color */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  overflow: hidden; /* Ensures content stays inside the card */
+  transition: transform 0.3s ease; /* Smooth hover effect */
+  padding: 20px;
+  text-align: center; /* Center the text within the card */
+}
+
+/* Hover effect on category cards */
+.category-card:hover {
+  transform: translateY(-5px); /* Slight lift effect on hover */
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+/* Category title styling */
+.category-title {
+  font-size: 1.6rem; /* Slightly larger title */
+  color: #333; /* Dark color for the title */
+  margin-bottom: 10px; /* Space between title and description */
+}
+
+/* Category description styling */
+.category-description {
+  font-size: 1rem; /* Normal text size */
+  color: #555; /* Slightly lighter color */
+  margin-bottom: 20px; /* Space between description and image */
+}
+
+/* Styling for category images */
+.category-image {
+  width: 100%; /* Make image responsive */
+  height: auto; /* Keep aspect ratio */
+  border-radius: 8px; /* Round the image corners */
+  object-fit: cover; /* Ensures the image covers the space without distortion */
+  transition: transform 0.3s ease; /* Smooth zoom effect on hover */
+}
+
+/* Hover effect on images */
+.category-image:hover {
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+  .home-main {
+    grid-template-columns: 1fr; /* Single column layout for mobile */
+    padding: 10px;
+  }
+
+  .category-card {
+    padding: 15px; /* Less padding on mobile */
+  }
+
+  .category-title {
+    font-size: 1.4rem; /* Slightly smaller title on mobile */
+  }
+
+  .category-description {
+    font-size: 0.9rem; /* Smaller description text */
+  }
+}

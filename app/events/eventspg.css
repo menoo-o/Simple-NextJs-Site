@@ -1,0 +1,72 @@
+/* Overall page container */
+.events-page {
+    padding: 20px;
+    background-color: #f4f4f4; /* Light background for the whole page */
+    text-align: center;
+  }
+  
+  /* Title of the events page */
+  .events-page-title {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 40px; /* Space below title */
+  }
+  
+  /* Grid for displaying the categories */
+  .categories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr)); /* Responsive grid */
+    gap: 20px;
+    padding: 0 20px;
+  }
+  
+  /* Each category card styling */
+  .category-card {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions on hover */
+  }
+  
+  .category-card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+  }
+  
+  /* Link styling */
+  .category-link {
+    text-decoration: none; /* Remove default underline */
+  }
+  
+  /* Category image styling */
+  .category-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Ensures the image fully covers the area without distortion */
+    border-bottom: 2px solid #ddd; /* Add a border below the image */
+  }
+  
+  /* Title of the category */
+  .category-title {
+    font-size: 1.5rem;
+    margin: 15px 0;
+    color: #333;
+    padding: 0 15px;
+  }
+  
+  /* Responsive design for small screens */
+  @media (max-width: 768px) {
+    .events-page-title {
+      font-size: 1.8rem; /* Slightly smaller title on mobile */
+    }
+  
+    .category-title {
+      font-size: 1.4rem; /* Slightly smaller title text on mobile */
+    }
+  
+    .category-image {
+      height: 200px; /* Limit image height on small screens */
+    }
+  }
+  

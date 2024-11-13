@@ -1,0 +1,58 @@
+/* Style for the overall event page */
+.event-page {
+  padding: 20px;
+  background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  border-radius: 8px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Event image */
+.event-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+/* Event title */
+.event-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* Event description */
+.event-description {
+  font-size: 1.2rem;
+  color: #555;
+  line-height: 1.5;
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* Styling for strong text inside the description */
+.event-description strong {
+  color: #0070f3; /* You can customize the color */
+}
+
+/* Ensure mobile responsiveness */
+@media (max-width: 768px) {
+  .event-page {
+    padding: 15px;
+  }
+
+  .event-title {
+    font-size: 1.5rem;
+  }
+
+  .event-description {
+    font-size: 1rem;
+  }
+}

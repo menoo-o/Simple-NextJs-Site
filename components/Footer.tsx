@@ -10,7 +10,7 @@ export default function Footer() {
         <p className="footer-text">
             &copy; {currentYear} Time to Code - A project by 
             <Link href="https://github.com/menoo-o" target="_blank" className="footer-link">
-                @menoo
+                 @menoo
             </Link>
         </p>
     </footer>

@@ -1,0 +1,81 @@
+/* Page container */
+.events-page {
+    padding: 20px;
+    background-color: #f8f8f8; /* Light background color for the page */
+  }
+  
+  /* City title */
+  .city-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #333;
+  }
+  
+  /* Events grid container */
+  .events-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Spacing between grid items */
+    padding: 0 20px;
+  }
+  
+  /* Individual event card */
+  .event-card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition on hover */
+  }
+  
+  .event-card:hover {
+    transform: translateY(-5px); /* Slight lift effect */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+  }
+  
+  /* Event link - removes default link styling */
+  .event-link {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* Event image */
+  .event-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Ensures image covers the box without distortion */
+  }
+  
+  /* Event title */
+  .event-title {
+    font-size: 1.4rem;
+    margin: 15px;
+    text-align: center;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  /* Event description */
+  .event-description {
+    font-size: 1rem;
+    color: #555;
+    padding: 0 15px 15px;
+    text-align: center;
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 768px) {
+    .city-title {
+      font-size: 1.6rem; /* Smaller city title font size */
+    }
+  
+    .event-title {
+      font-size: 1.2rem; /* Adjusted title size on mobile */
+    }
+  
+    .event-description {
+      font-size: 0.9rem; /* Smaller description text */
+    }
+  }
+  
