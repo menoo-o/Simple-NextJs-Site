@@ -1,6 +1,13 @@
 // app/events/[eventsPerCity]/[event]/page.tsx
 
-export default function EventPage({ params }: { params: { eventsPerCity: string; event: string } }) {
+type EventParams = {
+  params: {
+    eventsPerCity: string;
+    event: string;
+  };
+}
+
+export default function EventPage({ params }: EventParams) {
   const { eventsPerCity, event } = params;
   
   return (
