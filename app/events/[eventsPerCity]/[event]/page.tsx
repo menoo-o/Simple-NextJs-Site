@@ -73,7 +73,7 @@ export default function EventPage({ params }: EventParams) {
       <p className="event-description">{eventDetails.description}</p>
      
       <BuyTicketButton onClick={()=>{
-        router.push('/buyticket')
+        router.push(`/buyticket?city=${eventsPerCity}&event=${eventDetails.title}`);
       }}/>
 
       {/* You can add additional content like event details here */}

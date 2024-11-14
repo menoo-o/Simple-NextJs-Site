@@ -1,0 +1,45 @@
+.ticket-page-container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+  
+  .ticket-page-title {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .ticket-form .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .form-input, .form-select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .submit-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #0070f3;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .submit-button:hover {
+    background-color: #005bb5;
+  }
+  
