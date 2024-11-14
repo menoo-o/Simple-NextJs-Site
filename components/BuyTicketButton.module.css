@@ -1,0 +1,49 @@
+/* Default (desktop) styles */
+.buyTicketBtn {
+    background-color: #0070f3; /* Primary color */
+    color: white;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .buyTicketBtn:hover {
+    background-color: #005bb5; /* Darker blue for hover */
+    transform: scale(1.05); /* Slight grow on hover */
+  }
+  
+  .buyTicketBtn:active {
+    background-color: #003a75; /* Even darker for active */
+    transform: scale(0.95); /* Slight shrink on active */
+  }
+  
+  /* Tablet (768px and above) */
+  @media (max-width: 1024px) {
+    .buyTicketBtn {
+      padding: 10px 20px;
+      font-size: 0.9rem;
+    }
+  }
+  
+  /* Mobile (480px and above) */
+  @media (max-width: 768px) {
+    .buyTicketBtn {
+      padding: 8px 18px;
+      font-size: 0.85rem;
+      border-radius: 3px;
+    }
+  }
+  
+  /* Extra small devices (320px and above) */
+  @media (max-width: 480px) {
+    .buyTicketBtn {
+      padding: 6px 16px;
+      font-size: 0.8rem;
+      border-radius: 3px;
+    }
+  }
+  

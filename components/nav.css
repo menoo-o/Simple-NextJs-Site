@@ -6,6 +6,7 @@
     padding: 5px 50px;
     background-color: #0c1115;
     color: #fff;
+
   }
   
   .logo img {
@@ -59,9 +60,9 @@
     }
   
     .nav-links {
-      flex-direction: column;
+      flex-direction: row;
       align-items: center;
-      gap: 10px;
+      gap: 30px;
     }
   
     .links {
